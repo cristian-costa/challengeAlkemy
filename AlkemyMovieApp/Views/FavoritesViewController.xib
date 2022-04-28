@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesViewController" customModule="AlkemyMovieApp" customModuleProvider="target">
+            <connections>
+                <outlet property="logOutButton" destination="Nzh-tN-gL1" id="X0O-Y7-TUe"/>
+                <outlet property="tabBar" destination="cTN-nR-FCG" id="RBv-0y-fsh"/>
+                <outlet property="tableView" destination="TQz-Q4-cKc" id="P6B-Lu-Vtr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esc-h6-skK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Favoritos" id="ixt-LU-oVY">
+                            <barButtonItem key="leftBarButtonItem" style="done" id="Jdz-QL-opi">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Nzh-tN-gL1">
+                                    <rect key="frame" x="20" y="5" width="92" height="34.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
+                                    <connections>
+                                        <action selector="logOutButton:" destination="-1" eventType="touchUpInside" id="rIP-se-pDS"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TQz-Q4-cKc">
+                    <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTN-nR-FCG">
+                    <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                    <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="2it-Z5-PQv"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="Movies" image="list.and.film" catalog="system" id="GdE-PS-dH3"/>
+                        <tabBarItem title="Favorites" image="star" catalog="system" id="q6Z-0b-W5a"/>
+                    </items>
+                    <color key="tintColor" red="0.89844959970000005" green="0.078835688530000003" blue="0.076992653310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="barTintColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="selectedImageTintColor" red="0.89844959970000005" green="0.078835688530000003" blue="0.076992653310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tabBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cTN-nR-FCG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="B0g-dK-iwL"/>
+                <constraint firstItem="esc-h6-skK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="CdP-GH-leX"/>
+                <constraint firstItem="esc-h6-skK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jdl-1b-DBv"/>
+                <constraint firstItem="esc-h6-skK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PAS-Pv-Od0"/>
+                <constraint firstItem="TQz-Q4-cKc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="TvH-sb-nXb"/>
+                <constraint firstItem="TQz-Q4-cKc" firstAttribute="top" secondItem="esc-h6-skK" secondAttribute="bottom" id="WpY-3S-rJF"/>
+                <constraint firstItem="cTN-nR-FCG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hox-H7-tBz"/>
+                <constraint firstItem="cTN-nR-FCG" firstAttribute="top" secondItem="TQz-Q4-cKc" secondAttribute="bottom" id="kRE-dx-ygo"/>
+                <constraint firstItem="TQz-Q4-cKc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="khl-xd-JkN"/>
+                <constraint firstItem="cTN-nR-FCG" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="wfR-wS-bna"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="list.and.film" catalog="system" width="128" height="86"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
