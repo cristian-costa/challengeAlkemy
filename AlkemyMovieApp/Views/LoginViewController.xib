@@ -75,11 +75,14 @@
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="FSx-aZ-s6Q" userLabel="ButtonsView">
-                    <rect key="frame" x="20" y="480" width="374" height="113"/>
+                    <rect key="frame" x="20" y="480" width="374" height="135"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whu-wO-6BX">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
                             <color key="backgroundColor" red="0.89844959970000005" green="0.078835688530000003" blue="0.076992653310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="bCq-gb-CwB"/>
+                            </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="INICIAR SESIÓN">
@@ -90,8 +93,11 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQs-xd-SWf">
-                            <rect key="frame" x="0.0" y="69" width="374" height="44"/>
+                            <rect key="frame" x="0.0" y="80" width="374" height="55"/>
                             <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="DQj-pf-4zw"/>
+                            </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="REGISTRARSE">
@@ -103,16 +109,25 @@
                         </button>
                     </subviews>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3m-e6-Gaq">
+                    <rect key="frame" x="109" y="128" width="196" height="41"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O3m-e6-Gaq" secondAttribute="trailing" constant="109" id="Ecm-HQ-sEY"/>
                 <constraint firstItem="qZ6-Zb-a2V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Jpf-JF-pZo"/>
+                <constraint firstItem="O3m-e6-Gaq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="84" id="S7h-rJ-zXc"/>
                 <constraint firstItem="FSx-aZ-s6Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="T7C-up-Sgm"/>
                 <constraint firstItem="qZ6-Zb-a2V" firstAttribute="top" secondItem="1in-EP-NG6" secondAttribute="bottom" constant="8" id="WZG-lV-gmX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1in-EP-NG6" secondAttribute="trailing" constant="20" id="Xca-cB-lOR"/>
                 <constraint firstItem="1in-EP-NG6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="133" id="bcy-qG-0X0"/>
                 <constraint firstItem="FSx-aZ-s6Q" firstAttribute="top" secondItem="qZ6-Zb-a2V" secondAttribute="bottom" constant="53" id="ift-Wm-EzG"/>
+                <constraint firstItem="O3m-e6-Gaq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="109" id="jeg-db-KOl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qZ6-Zb-a2V" secondAttribute="trailing" constant="20" id="pSd-qA-8bW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FSx-aZ-s6Q" secondAttribute="trailing" constant="20" id="tQG-Bk-q5Y"/>
                 <constraint firstItem="1in-EP-NG6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uFq-fS-vz1"/>

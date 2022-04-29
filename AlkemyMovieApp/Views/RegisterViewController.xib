@@ -73,11 +73,14 @@
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="gTc-iG-xJ8" userLabel="ButtonsView">
-                    <rect key="frame" x="20" y="480" width="374" height="113"/>
+                    <rect key="frame" x="20" y="480" width="374" height="135"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hq-0k-AYX">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
                             <color key="backgroundColor" red="0.89844959970000005" green="0.078835688530000003" blue="0.076992653310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="69R-Oe-Fpu"/>
+                            </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="REGISTRARSE">
@@ -88,8 +91,11 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXT-Qn-Ir7">
-                            <rect key="frame" x="0.0" y="69" width="374" height="44"/>
+                            <rect key="frame" x="0.0" y="80" width="374" height="55"/>
                             <color key="backgroundColor" red="0.076813302929999994" green="0.076813332740000004" blue="0.076813302929999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Oz0-bu-dj8"/>
+                            </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="INICIAR SESIÓN">
@@ -101,6 +107,12 @@
                         </button>
                     </subviews>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrarse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eaa-6e-9fq">
+                    <rect key="frame" x="122" y="128" width="171" height="41"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,10 +120,13 @@
                 <constraint firstItem="KAb-Ai-qEV" firstAttribute="top" secondItem="XOP-G0-CDm" secondAttribute="bottom" constant="8" id="28e-24-lji"/>
                 <constraint firstItem="XOP-G0-CDm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="133" id="5WI-0U-N6Z"/>
                 <constraint firstItem="XOP-G0-CDm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7Gb-ys-KGs"/>
+                <constraint firstItem="Eaa-6e-9fq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="84" id="Iv8-01-l4j"/>
+                <constraint firstItem="Eaa-6e-9fq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="122" id="Oyy-lv-idM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gTc-iG-xJ8" secondAttribute="trailing" constant="20" id="Pib-mY-ge1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XOP-G0-CDm" secondAttribute="trailing" constant="20" id="VrK-Co-cPQ"/>
                 <constraint firstItem="gTc-iG-xJ8" firstAttribute="top" secondItem="KAb-Ai-qEV" secondAttribute="bottom" constant="53" id="ZgG-tc-4KM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KAb-Ai-qEV" secondAttribute="trailing" constant="20" id="irp-Au-6cW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Eaa-6e-9fq" secondAttribute="trailing" constant="121" id="qaY-84-CM9"/>
                 <constraint firstItem="gTc-iG-xJ8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="sSt-Ye-Wkp"/>
                 <constraint firstItem="KAb-Ai-qEV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="tBp-RX-lNi"/>
             </constraints>

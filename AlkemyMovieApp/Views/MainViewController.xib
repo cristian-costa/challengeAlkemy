@@ -34,11 +34,11 @@
                         <navigationItem title="Películas populares" id="tjX-IM-luP">
                             <barButtonItem key="leftBarButtonItem" style="done" id="nuu-j2-dGy">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="fjL-k6-OnA">
-                                    <rect key="frame" x="20" y="4.5" width="92" height="35"/>
+                                    <rect key="frame" x="20" y="4.5" width="126" height="35"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Salir"/>
                                     <connections>
                                         <action selector="logOutButton:" destination="-1" eventType="touchUpInside" id="l5g-bm-evs"/>
                                     </connections>
